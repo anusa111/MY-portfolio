@@ -1,0 +1,48 @@
+.blog * {
+    line-height: 1.75;
+    font-size: 1.125rem;
+  }
+  
+  .blog h1 {
+    font-weight: 650;
+    font-size: 2.25rem;
+  }
+  
+  .blog h2 {
+    font-size: 1.5rem;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #1e1e1e;
+  }
+  
+  .blog h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  
+  .blog p {
+    margin-bottom: 16px;
+  }
+  
+  .blog a {
+    color: blue;
+    border-bottom: 1px solid blue;
+  }
+  
+  .blog img {
+    height: 500px;
+    width: 100%;
+    margin: 24px 0;
+    object-fit: contain;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .blog h2 {
+      font-size: 1.2rem;
+    }
+    .blog h3 {
+      font-size: 1.1rem;
+    }
+  }
+  

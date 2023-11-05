@@ -3,25 +3,46 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* --primary-color:#55E6A5; */
+  --primary-color:#168AF7;
+
+  --white-shade:#A2A2A2;
+  --black-color:#02050A;
+
+
+}
+*{
+  font-family: 'Public Sans', sans-serif;
+}
+body{
+  color:whitesmoke;
+  background-color: #09101A;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.layout {
+  @apply max-w-[1280px]  mx-auto;
+}
+.layout-padding {
+  @apply lg:px-0 px-6;
+}
+.component-padding {
+  @apply lg:py-[60px] 3xl:py-[120px] py-[60px];
+}
+.hexagon {
+  -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+ }
+ @keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.animated-element {
+
+  background-color: blue;
+  animation: moveUpDown 4s linear infinite;
 }
