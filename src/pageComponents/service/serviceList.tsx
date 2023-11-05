@@ -33,7 +33,7 @@ const ServiceList = () => {
     <div className="layout layout-padding component-padding ">
       <div className="flex flex-col gap-[120px]">
         <GlobalComponentHeader
-          small_title="MY SERIVCE"
+          small_title="MY SERVICE"
           main_title=<div className="text-center">
             Crafting stories through<br></br>
             design and innovation
