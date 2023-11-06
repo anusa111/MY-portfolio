@@ -14,8 +14,8 @@ const AboutMe = () => {
             <GlobalComponentHeader
               small_title="ABOUT ME"
               main_title=<div>
-                Transforming visions into <br></br>
-                exceptional portfolios
+                Elevating technology for <br></br>
+                Lasting Impressions
               </div>
             />
             <div className="flex items-start gap-4">
@@ -25,12 +25,17 @@ const AboutMe = () => {
                 }}
                 className="leading-7"
               >
-                I specialize in turning creative concepts into remarkable
-                digital portfolios. With a strong focus on design and a passion
-                for innovation, I craft visually appealing collections that not
-                only display your work but also leave a lasting impact on your
-                audience. Let{"'s"} collaborate to bring your ideas to life and
-                develop a portfolio that tells your unique story.
+                My passion for clean code and intuitive design stems from my
+                belief that technology should simplify, not complicate.{" "}
+                {"I've "}always sought to bridge the gap between intricate
+                concepts and user-friendly interfaces.
+                <br />
+                <br />
+                My approach to development {"isn't"} just about creating
+                functional websites; {"it's"} about crafting digital experiences
+                that leave a lasting impact. As we collaborate, I look forward
+                to not only meeting your technical needs but also exceeding your
+                expectations for user engagement.
               </div>
             </div>
           </div>

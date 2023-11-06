@@ -12,16 +12,16 @@ const Footer = () => {
       menu: [
         {
           menu: "Home",
-          link: "#",
+          link: "/",
         },
         {
-          menu: "Features",
-          link: "#",
+          menu: "About",
+          link: "/about",
         },
 
         {
-          menu: "Contact Us",
-          link: "#",
+          menu: "Projects",
+          link: "/projects",
         },
       ],
     },
@@ -29,12 +29,12 @@ const Footer = () => {
       title: "Resources",
       menu: [
         {
-          menu: "Features",
-          link: "#",
+          menu: "Services",
+          link: "/services",
         },
         {
-          menu: "Contact Us",
-          link: "#",
+          menu: "About Me",
+          link: "/about",
         },
       ],
     },
@@ -78,12 +78,13 @@ const Footer = () => {
         <div className="flex flex-col gap-[40px]">
           <div className="grid lg:grid-cols-9 grid-col-1 lg:gap-[140px] gap-[40px]">
             <div className="lg:col-span-3">
-              <div className="flex flex-col gap-[32px]">
+              <div className="flex flex-col gap-[32px] lg:translate-y-[-30px]">
                 <Image
                   src={chibihrLogo}
                   alt="loading"
-                  height={34}
-                  width={145}
+                  // height={34}
+                  // width={145}
+                  className="lg:h-[120px] lg:w-[120px] w-[80px] h-[80px] object-contain"
                 />
                 <div className="text-[16px] text-[#596780]">
                   I thrive on solving complex technical challenges and
@@ -116,7 +117,12 @@ const Footer = () => {
               })}
             </div>
           </div>
-          <div className="border-t-[1px] border-[#b2b2f0] pt-[20px] text-[16px]">
+          <div
+            style={{
+              borderColor: "var(--white-shade)",
+            }}
+            className="border-t-[1px]  pt-[20px] text-[16px]"
+          >
             <div className="flex lg:flex-row flex-col justify-center lg:items-center gap-[20px]">
               <div>© Anusa Khadka 2023 | All Rights Reserved</div>
             </div>

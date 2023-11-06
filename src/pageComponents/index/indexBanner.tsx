@@ -9,6 +9,8 @@ import GlobalButton from "../global/GlobalButton";
 //react icons
 import { LiaDownloadSolid } from "react-icons/lia";
 
+//resume
+
 const IndexBanner = () => {
   return (
     <div className="lg:pt-[180px] pt-[140px] layout layout-padding">
@@ -46,7 +48,8 @@ const IndexBanner = () => {
               }}
               title="Download CV"
               icon={<LiaDownloadSolid />}
-              link="#"
+              link="/documents/my_resume.pdf"
+              downloadtype="resume"
             />
           </div>
         </div>

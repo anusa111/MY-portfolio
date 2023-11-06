@@ -35,8 +35,8 @@ const ServiceList = () => {
         <GlobalComponentHeader
           small_title="MY SERVICE"
           main_title=<div className="text-center">
-            Crafting stories through<br></br>
-            design and innovation
+            Enhance Online Presence<br></br>
+            with my service
           </div>
           headerStyles={{
             display: "flex",

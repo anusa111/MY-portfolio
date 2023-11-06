@@ -6,6 +6,7 @@ import IndexBanner from "@/pageComponents/index/indexBanner";
 import ServiceList from "@/pageComponents/service/serviceList";
 import PortfolioProjects from "@/pageComponents/skill/portfolioProjects";
 import SkillEducation from "@/pageComponents/skill/skillEducation";
+import Testimonial from "@/pageComponents/skill/testimonial";
 import React from "react";
 
 const index = () => {
@@ -18,6 +19,7 @@ const index = () => {
       <AboutProject />
       <SkillEducation />
       <PortfolioProjects />
+      <Testimonial />
     </Layout>
   );
 };

@@ -9,6 +9,7 @@ import logo from "../../../public/assets/logo.png";
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineMenu } from "react-icons/ai";
 import CustomDrawer from "@/antdComponents/CustomDrawer";
+import ContactForm from "./ContactForm";
 
 const Header = () => {
   //states..
@@ -39,16 +40,16 @@ const Header = () => {
     },
     {
       menu: "About",
-      link: "#",
+      link: "/about",
     },
 
     {
       menu: "Services",
-      link: "#",
+      link: "/services",
     },
     {
       menu: "Projects",
-      link: "#",
+      link: "/projects",
     },
   ];
 
@@ -102,11 +103,8 @@ const Header = () => {
                 open={openContactDrawer}
               >
                 <div className="flex flex-col gap-4 text-[16px]">
-                  <div className="text-[20px] font-medium">About Me</div>
-                  <div className="text-[#A2A2A2] text-[16px]">
-                    Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
-                    tempor incididunt ut labore et magna aliqua. Ut enim ad
-                    minim veniam laboris.
+                  <div>
+                    <ContactForm />
                   </div>
                 </div>
               </CustomDrawer>

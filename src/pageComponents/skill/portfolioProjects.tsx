@@ -2,8 +2,14 @@ import React from "react";
 import GlobalComponentHeader from "../global/GlobalComponentHeader";
 
 //images....
-import highlightProject from "../../../public/portfolio/highlightProject.jpg";
+import dynotechglobal from "../../../public/portfolio/dynotechglobal.png";
+import panifilter from "../../../public/portfolio/panifilterImage.png";
+import kistabandi from "../../../public/portfolio/Kistabandi.png";
+import chibihr from "../../../public/portfolio/Chibihr.png";
+import mahadeals from "../../../public/portfolio/mahadeals.png";
+
 import highlightProjectSecond from "../../../public/portfolio/highlightProjectSecond.jpg";
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,13 +18,13 @@ const PortfolioProjects = () => {
     {
       mainProject: [
         {
-          img: highlightProject,
+          img: dynotechglobal,
           project_name: "DynoTech Global",
           intro: "Company",
           link: "https://dynotechglobal.com/",
         },
         {
-          img: highlightProjectSecond,
+          img: panifilter,
           project_name: "Panifilter",
           intro: "Company",
           link: "https://www.panifilter.com/",
@@ -26,19 +32,19 @@ const PortfolioProjects = () => {
       ],
       secondaryProject: [
         {
-          img: highlightProjectSecond,
+          img: kistabandi,
           project_name: "Kistabandi",
           intro: "Company",
           link: "https://www.kistabandi.com/",
         },
         {
-          img: highlightProjectSecond,
+          img: chibihr,
           project_name: "Chibi HR",
           intro: "Company",
           link: "https://www.chibihr.com/",
         },
         {
-          img: highlightProjectSecond,
+          img: mahadeals,
           project_name: "MAHA Deals",
           intro: "Company",
           link: "https://maha.deals/",
@@ -53,8 +59,8 @@ const PortfolioProjects = () => {
         <GlobalComponentHeader
           small_title="MY RECENT PORTFOLIO"
           main_title=<div>
-            Elevate your brand to new <br></br>
-            heights with our portfolio expertise
+            Introducing my Innovative Projects <br></br>
+            for your Inspiration
           </div>
         />
         <div className="grid grid-cols-1">
@@ -77,8 +83,8 @@ const PortfolioProjects = () => {
                           alt="loading"
                           className="w-full lg:h-[550px] h-[350px] object-cover transform transition duration-500 ease-in-out group-hover:scale-110"
                         />
-                        <div className="text-white flex items-center  pl-10  bg-gradient-to-t from-[#0c0505]  absolute bottom-0 w-full h-[20vh]">
-                          <div className="text-[25px] font-bold">
+                        <div className="text-white flex items-center  pl-10  bg-gradient-to-t from-[#09101A]  absolute bottom-0 w-full lg:h-[30vh] h-[35vh]">
+                          <div className="text-[25px] font-bold pt-[120px]">
                             {" "}
                             {data.project_name}
                           </div>
@@ -101,8 +107,8 @@ const PortfolioProjects = () => {
                           alt="loading"
                           className="w-full h-[350px] transform transition duration-500 ease-in-out group-hover:scale-110"
                         />
-                        <div className="text-white flex items-center  pl-10  bg-gradient-to-t from-[#0c0505]  absolute bottom-0 w-full h-[20vh]">
-                          <div className="text-[25px] font-bold">
+                        <div className="text-white flex items-center  pl-10  bg-gradient-to-t from-[#09101A]  absolute bottom-0 w-full lg:h-[30vh] h-[35vh]">
+                          <div className="text-[25px] font-bold pt-[120px]">
                             {" "}
                             {data.project_name}
                           </div>
