@@ -40,7 +40,7 @@ const ContactForm = () => {
       name: "message",
     },
   ];
-  const form_data_receiver = () => {
+  const form_data_receiver = async () => {
     console.log(
       viewer.current.value,
       email.current.value,
@@ -67,16 +67,17 @@ const ContactForm = () => {
         .then(
           (result) => {
             console.log(result.text);
+            window.location.href = "/thankyou";
+
+            viewer.current.value == " ";
+            email.current.value == " ";
+            phoneNumber.current.value == " ";
+            message.current.value == " ";
           },
           (error) => {
             console.log(error.text);
           }
         );
-
-      viewer.current.value == " ";
-      email.current.value == " ";
-      phoneNumber.current.value == " ";
-      message.current.value == " ";
     }
   };
 

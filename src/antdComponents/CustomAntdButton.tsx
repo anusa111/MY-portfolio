@@ -1,4 +1,6 @@
 import { Button } from "antd";
+import { link } from "fs";
+import Link from "next/link";
 import React from "react";
 
 interface IBtnProps {
@@ -6,6 +8,7 @@ interface IBtnProps {
   loadingBtn?: any;
   children: React.ReactNode;
   btnStyles?: React.CSSProperties;
+  link?: any;
 }
 
 const CustomAntdButton = ({
@@ -13,6 +16,7 @@ const CustomAntdButton = ({
   loadingBtn,
   children,
   btnStyles,
+  link,
 }: IBtnProps) => {
   return (
     <Button

@@ -18,7 +18,6 @@ const GlobalButton = ({
 }: IButtonProps) => {
   return (
     <a
-      download={downloadtype}
       href={link}
       style={buttonStyle}
       className="flex items-center justify-center gap-[2px] w-fit px-[25px] py-[20px] "

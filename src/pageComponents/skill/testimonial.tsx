@@ -10,34 +10,24 @@ import "react-multi-carousel/lib/styles.css";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 //react images...
-import image1 from "../../../public/assets/image1.jpg";
-import image2 from "../../../public/assets/image2.jpg";
+import pratik from "../../../public/assets/pratik.webp";
+import samuel from "../../../public/assets/samuel.webp";
 
 const Testimonial = () => {
   const testimonial = [
     {
-      title: "It's just incredible!",
       description:
-        "ChibiHR has not only simplified our HR processes but also allowed us to be more proactive in our employee engagement initiatives",
+        "I had the pleasure of working with Anusa on a development project, and I couldn't be more impressed with their expertise and professionalism. She is a brilliant full stack developer who demonstrated an exceptional ability to turn ideas into functional, user-friendly solutions",
       name: "John Anderson",
-      position: "Product Manager at TechSpark Solutions",
-      image: image1,
+      position: "Doctype Manager ",
+      image: pratik,
     },
     {
-      title: "Satisfied User Here!",
       description:
-        "ChibiHR has been a fantastic addition to our HR toolbox. We've seen a noticeable improvement in efficiency, and it's been a tremendous asset as our company has grown.",
-      name: "Lisa Carter",
-      position: "Streamline Innovations",
-      image: image2,
-    },
-    {
-      title: "No doubt, Spend.In is the best!",
-      description:
-        "ChibiHR has made a world of difference in our HR operations. Its simplicity and automation have saved us time and reduced errors.",
-      name: "Sarah Mitchel",
-      position: "HR Manager at ProSolutions Inc.",
-      image: image1,
+        "I highly recommend Anusa to anyone seeking a top-notch full stack developer who can transform concepts into reality. Their work is a testament to their skill and commitment to excellence.",
+      name: "Samuel Anderson",
+      position: "Intrepid Travel Manager",
+      image: samuel,
     },
   ];
 
@@ -71,7 +61,7 @@ const Testimonial = () => {
     return (
       <div
         className="carousel-button-group   gap-4 flex justify-center
-            items-center w-full absolute bottom-[-90px] "
+            items-center w-full absolute lg:bottom-[-90px] "
       >
         <button
           style={{
@@ -99,15 +89,13 @@ const Testimonial = () => {
 
   return (
     <div className="layout layout-padding component-padding">
-      <div className="flex flex-col gap-20">
+      <div className="flex flex-col gap-10">
         <div className="flex items-center justify-center text-center">
           <GlobalComponentHeader
             small_title="CLIENT REVIEW"
             main_title="My testimonial"
           />
         </div>
-
-        {/* react carousel */}
 
         <div className="relative  mb-20 ">
           <Carousel
@@ -118,14 +106,14 @@ const Testimonial = () => {
             pauseOnHover={true}
             customButtonGroup={<ButtonGroup />}
             arrows={false}
-            className="relative"
+            className="relative "
             renderButtonGroupOutside={true}
           >
             {testimonial.map((data, index) => {
               return (
                 <div
                   key={index}
-                  className="mx-[16px] relative "
+                  className="mx-[16px] p-8   m-8 relative"
                   style={{
                     color: "var(--white-color)",
                   }}
@@ -134,23 +122,32 @@ const Testimonial = () => {
                     style={{
                       borderColor: "var(--primary-color)",
                     }}
-                    className="border-[1px] h-[250px] p-8 rounded-[8px] "
+                    className="border-[1px]  lg:p-10 rounded-[8px] p-8"
                   >
-                    <div className=" flex flex-col gap-[15px]">
-                      <div className="text-[18px]">{data.title}</div>
-                      <div className="text-[16px] h-[100px] ">
+                    <div className=" flex flex-col gap-[15px] mt-8">
+                      <div className="text-[16px] lg:h-[140px] ">
                         {data.description}
                       </div>
-                      <div className="text-[22px]">{data.name}</div>
+                      <div>
+                        <div className="text-[22px]">{data.name}</div>
+                        <div
+                          style={{
+                            color: "var(--primary-color)",
+                          }}
+                          className="text-[16px]"
+                        >
+                          {data.position}
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  {/* <div className="carousel-button-group   gap-4 w-full absolute top-[-50px] ">
+                  <div className="  gap-4  absolute lg:top-[-20px] top-[-2px] lg:right-24  right-20">
                     <Image
-                      src={image1}
+                      src={data.image}
                       alt="loading"
-                      className="rounded-full "
+                      className="rounded-full h-[60px] w-[60px] lg:h-[100px] lg:w-[100px] object-cover"
                     />
-                  </div> */}
+                  </div>
                 </div>
               );
             })}
