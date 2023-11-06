@@ -52,9 +52,10 @@ const ContactForm = () => {
       viewer.current.value == "" ||
       email.current.value == "" ||
       phoneNumber.current.value == "" ||
-      message.current.value
+      message.current.value == ""
     ) {
       setInputStatus(true);
+      console.log("anusa");
     } else {
       emailjs
         .sendForm(
@@ -71,6 +72,11 @@ const ContactForm = () => {
             console.log(error.text);
           }
         );
+
+      viewer.current.value == " ";
+      email.current.value == " ";
+      phoneNumber.current.value == " ";
+      message.current.value == " ";
     }
   };
 

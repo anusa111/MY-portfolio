@@ -7,7 +7,7 @@ import React from "react";
 const Projects = () => {
   return (
     <Layout>
-      <Metatag title="Anusa" sub_title="Service" />
+      <Metatag title="Anusa" sub_title="Projects" />
       <div className="pt-[120px]">
         <SkillEducation />
         <PortfolioProjects />
