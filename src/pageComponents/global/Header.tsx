@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 //images...
-import logo from "../../../public/assets/logo.png";
+import logo from "../../../public/assets/logoDark.png";
 
 //react icons..
 import { BiMenuAltRight } from "react-icons/bi";

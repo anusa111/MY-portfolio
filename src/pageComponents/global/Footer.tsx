@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 //react images..
-import chibihrLogo from "../../../public/assets/logo.png";
+import chibihrLogo from "../../../public/assets/logoDark.png";
 import Image from "next/image";
 
 const Footer = () => {
