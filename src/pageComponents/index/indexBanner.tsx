@@ -49,7 +49,6 @@ const IndexBanner = () => {
               title="Download CV"
               icon={<LiaDownloadSolid />}
               link="/documents/my_resume.pdf"
-              downloadtype="resume"
             />
           </div>
         </div>

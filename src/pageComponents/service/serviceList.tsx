@@ -13,19 +13,19 @@ const ServiceList = () => {
       img: webDevelopment,
       title: "Web Development",
       description:
-        "I am a web developer, using HTML, CSS, and JavaScript to create delightful online experiences for everyone to enjoy.",
+        "As a web developer, I utilize modern frameworks like React and Next.js, leveraging the power of JavaScript to craft engaging online experiences for a wide audience.",
     },
     {
       img: seo,
       title: "SEO",
       description:
-        "I am optimizing websites for SEO, ensuring they rank well on search engines and attract more visitors.",
+        "I specialize in optimizing websites for optimal SEO performance, guaranteeing they secure high rankings on search engines and captivate an ever-increasing audience of visitors.",
     },
     {
       img: graphicsDesign,
       title: "Graphics Design",
       description:
-        "I am designing captivating graphics, adding visual flair to websites and applications, making them visually appealing and engaging.",
+        "I excel in crafting attention-grabbing graphics that enhance the visual appeal of websites and applications, ultimately making them more engaging and visually appealing to users.",
     },
   ];
 
