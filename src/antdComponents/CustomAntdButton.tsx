@@ -25,7 +25,7 @@ const CustomAntdButton = ({
       size="large"
       htmlType="submit"
       style={btnStyles}
-      className="lg:w-[332px] w-[280px] "
+      className="lg:w-[332px] w-[256px]"
     >
       {children}
     </Button>

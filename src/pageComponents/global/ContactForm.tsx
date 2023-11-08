@@ -133,7 +133,7 @@ const ContactForm = () => {
               );
             })}
           </div>
-          <div className="flex flex-col gap-[15px]">
+          <div className="flex flex-col gap-[15px] lg:justify-start justify-center lg:items-start items-center">
             <CustomAntdButton
               loadingBtn={loadingBtn}
               onClick={() => {
