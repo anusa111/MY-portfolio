@@ -107,7 +107,7 @@ const AboutProject = () => {
     <div className="layout layout-padding component-padding">
       <div className="grid lg:grid-cols-2 grid-cols-1 justify-between lg:gap-[80px] gap-[40px]">
         <div className="flex flex-col gap-[40px] ">
-          <div className="lg:leading-[80px] flex lg:flex-col gap-[10px]">
+          <div className="lg:leading-[80px] flex flex-col lg:gap-[10px] ">
             <div className="lg:text-[120px] text-[40px] font-semibold">
               Graced{" "}
               <span className="lg:text-[55px] text-[25px] font-semibold">

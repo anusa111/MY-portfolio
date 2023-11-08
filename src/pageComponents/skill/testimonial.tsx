@@ -97,7 +97,7 @@ const Testimonial = () => {
           />
         </div>
 
-        <div className="relative  mb-20 ">
+        <div className="relative   mb-20 ">
           <Carousel
             responsive={responsive}
             swipeable={true}
@@ -113,7 +113,7 @@ const Testimonial = () => {
               return (
                 <div
                   key={index}
-                  className="mx-[16px] p-8   m-8 relative"
+                  className="lg:mx-[16px] lg:p-8    my-8 relative "
                   style={{
                     color: "var(--white-color)",
                   }}
@@ -122,7 +122,7 @@ const Testimonial = () => {
                     style={{
                       borderColor: "var(--primary-color)",
                     }}
-                    className="border-[1px]  lg:p-10 rounded-[8px] p-8"
+                    className="border-[1px] p-6 lg:p-10 rounded-[8px] "
                   >
                     <div className=" flex flex-col gap-[15px] mt-8">
                       <div className="text-[16px] lg:h-[140px] ">
@@ -141,7 +141,7 @@ const Testimonial = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="  gap-4  absolute lg:top-[-20px] top-[-2px] lg:right-24  right-20">
+                  <div className="  gap-4  absolute lg:top-[-20px] top-[-25px] lg:right-24  right-10">
                     <Image
                       src={data.image}
                       alt="loading"
