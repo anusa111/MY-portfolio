@@ -17,14 +17,14 @@ const Testimonial = () => {
   const testimonial = [
     {
       description:
-        "I had the pleasure of working with Anusa on a development project, and I couldn't be more impressed with their expertise and professionalism. She is a brilliant full stack developer who demonstrated an exceptional ability to turn ideas into functional, user-friendly solutions",
+        "I had the pleasure of working with Anusa on a development project, and I couldn't be more impressed with her expertise and professionalism. She is a brilliant full stack developer who demonstrated an exceptional ability to turn ideas into functional, user-friendly solutions.",
       name: "John Anderson",
       position: "Doctype Manager ",
       image: pratik,
     },
     {
       description:
-        "I highly recommend Anusa to anyone seeking a top-notch full stack developer who can transform concepts into reality. Their work is a testament to their skill and commitment to excellence.",
+        "I highly recommend Anusa to anyone seeking a top-notch full stack developer who can transform concepts into reality. Her work is a testament to their skill and commitment to excellence.",
       name: "Samuel Anderson",
       position: "Intrepid Travel Manager",
       image: samuel,
