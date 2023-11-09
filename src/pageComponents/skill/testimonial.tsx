@@ -24,7 +24,7 @@ const Testimonial = () => {
     },
     {
       description:
-        "I highly recommend Anusa to anyone seeking a top-notch full stack developer who can transform concepts into reality. Her work is a testament to their skill and commitment to excellence.",
+        "I highly recommend Anusa to anyone seeking a top-notch full stack developer who can transform concepts into reality. Her work is a testament to her skill and commitment to excellence.",
       name: "Samuel Anderson",
       position: "Intrepid Travel Manager",
       image: samuel,

@@ -43,7 +43,7 @@ const Footer = () => {
       menu: [
         {
           menu: "LinkedIn",
-          link: "https://www.linkedin.com/feed/",
+          link: "https://www.linkedin.com/in/anusa-khadka-5a0557235/",
         },
         {
           menu: "Instagram",
