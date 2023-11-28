@@ -7,8 +7,7 @@ import panifilter from "../../../public/portfolio/panifilterImage.png";
 import kistabandi from "../../../public/portfolio/Kistabandi.png";
 import chibihr from "../../../public/portfolio/Chibihr.png";
 import mahadeals from "../../../public/portfolio/mahadeals.png";
-
-import highlightProjectSecond from "../../../public/portfolio/highlightProjectSecond.jpg";
+import chatchamber from "../../../public/portfolio/chatchamber.png";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -44,6 +43,12 @@ const PortfolioProjects = () => {
           link: "https://www.chibihr.com/",
         },
         {
+          img: chatchamber,
+          project_name: "Chat Chamber",
+          intro: "personal",
+          link: "https://chatchamber.netlify.app/",
+        },
+        {
           img: mahadeals,
           project_name: "MAHA Deals",
           intro: "Company",
@@ -75,7 +80,7 @@ const PortfolioProjects = () => {
                         key={index}
                         className={`${
                           index == 0 ? "lg:col-span-8 " : "lg:col-span-4"
-                        } relative group overflow-hidden`}
+                        } relative `}
                         target="_blank"
                       >
                         <Image
