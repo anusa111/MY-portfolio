@@ -4,14 +4,9 @@ import GlobalComponentHeader from "../global/GlobalComponentHeader";
 const SkillEducation = () => {
   const skill_list = [
     {
-      date: "2014-2016",
-      title: "Javascript Developer",
-      desc: "This period of my career allowed me to enhance my expertise in JavaScript and front-end development, laying a strong foundation for my subsequent projects and roles in the field.",
-    },
-    {
-      date: "2017-2018",
-      title: "React Developer",
-      desc: "As a react developer,I worked across teams, designed client-side solutions, and prioritized performance & user experience.Staying updated on industry trends, this period marked significant professional growth, laying the foundation for future work.",
+      date: "2020-present",
+      title: "Full Stack Developer",
+      desc: "While working as a Next.js Developer, I felt a strong urge to expand my skill set. This led me to explore full-stack development, including backend and APIs. I'm still venturing further in this field, driven by my passion for learning and growth.",
     },
     {
       date: "2018-2020",
@@ -19,9 +14,14 @@ const SkillEducation = () => {
       desc: "Recognizing the growing importance of SEO, I transitioned into the field while working as a React js Developer from 2017 to 2018. This strategic move allowed me to enrich my skill set, leveraging my background in Next.js.",
     },
     {
-      date: "2020-present",
-      title: "Full Stack Developer",
-      desc: "While working as a Next.js Developer, I felt a strong urge to expand my skill set. This led me to explore full-stack development, including backend and APIs. I'm still venturing further in this field, driven by my passion for learning and growth.",
+      date: "2017-2018",
+      title: "React Developer",
+      desc: "As a react developer,I worked across teams, designed client-side solutions, and prioritized performance & user experience.Staying updated on industry trends, this period marked significant professional growth, laying the foundation for future work.",
+    },
+    {
+      date: "2014-2016",
+      title: "Javascript Developer",
+      desc: "This period of my career allowed me to enhance my expertise in JavaScript and front-end development, laying a strong foundation for my subsequent projects and roles in the field.",
     },
   ];
 

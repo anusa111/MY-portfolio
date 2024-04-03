@@ -19,8 +19,9 @@ body{
 }
 
 .layout {
-  @apply max-w-[1280px]  mx-auto;
+  @apply max-w-[1280px] lg:max-w-7xl mx-auto;
 }
+
 .layout-padding {
   @apply lg:px-0 px-6;
 }

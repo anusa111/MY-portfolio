@@ -55,7 +55,6 @@ const ContactForm = () => {
       message.current.value == ""
     ) {
       setInputStatus(true);
-      console.log("anusa");
     } else {
       emailjs
         .sendForm(
@@ -88,6 +87,7 @@ const ContactForm = () => {
     const numericValue = inputValue.replace(/[^0-9\s+\-()]/g, "");
     input.value = numericValue;
   };
+
   return (
     <div className="flex flex-col gap-10">
       <div className="flex flex-col gap-[10px]">

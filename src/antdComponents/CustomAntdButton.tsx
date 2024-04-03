@@ -16,7 +16,6 @@ const CustomAntdButton = ({
   loadingBtn,
   children,
   btnStyles,
-  link,
 }: IBtnProps) => {
   return (
     <Button
