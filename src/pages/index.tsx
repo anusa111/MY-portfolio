@@ -12,7 +12,7 @@ import React from "react";
 const index = () => {
   return (
     <Layout>
-      <Metatag title="Anusa" sub_title="Portfolio" />
+      <Metatag title="Anusa" sub_title="Khadka" />
       <IndexBanner />
       <ServiceList />
       <AboutMe />
