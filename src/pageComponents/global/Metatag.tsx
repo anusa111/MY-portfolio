@@ -12,7 +12,7 @@ const Metatag = ({ title, sub_title }: IMetatagProps) => {
       <title>{`${title}-${sub_title}`}</title>
       <meta
         property="og:image"
-        content="https://photos.fife.usercontent.google.com/pw/AP1GczMKOExIx8SJ-Fy0Gb8Gcov8AHVQZDdUa6jRomdqTbUxwHuB4BO_S-qA=w369-h584-s-no-gm?authuser=0&pli=1"
+        content="https://firebasestorage.googleapis.com/v0/b/fir-applications-e96c5.appspot.com/o/my-image.jpg?alt=media&token=3f0ee015-ce28-4b74-b344-a2dfc83dc948"
       />
 
       <meta
