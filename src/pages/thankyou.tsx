@@ -15,7 +15,7 @@ const Thankyou = () => {
         <div className="layout layout-padding component-padding ">
           <div className="flex flex-col gap-[20px] items-center text-center justify-center h-[50vh] ">
             <div className="lg:text-[44.8px] text-[40px] ">
-              Thankyou for messaging us !
+              Thankyou for messaging me !
             </div>
             <div className="  text-center lg:text-[24px] text-[20px]">
               <div className=" ">Your message has been received</div>

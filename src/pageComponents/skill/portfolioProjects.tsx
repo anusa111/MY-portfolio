@@ -7,6 +7,8 @@ import chatchamber from "../../../public/portfolio/chatchamber.png";
 import dynotechglobal from "../../../public/portfolio/dynotechglobal.png";
 import panifilter from "../../../public/portfolio/panifilterImage.png";
 import bishwasportfolio from "../../../public/portfolio/bishwasportfolio.png";
+import nepalmedical from "../../../public/portfolio/nepalmedicalcollege.png";
+import secondclient from "../../../public/portfolio/secondclient.png";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -30,17 +32,30 @@ const PortfolioProjects = () => {
       ],
       secondaryProject: [
         {
+          img: bishwasportfolio,
+          project_name: "Bishwas Timalsina - Client",
+          intro: "personal",
+          link: "https://bishwastimalsina.com.np/",
+        },
+        {
+          img: nepalmedical,
+          project_name: "Nepal Medical College",
+          intro: "Company",
+          link: "https://nmcth.edu/",
+        },
+        {
+          img: secondclient,
+          project_name: "Quick Repair Tx - USA Client",
+          intro: "personal",
+          link: "https://quickrepairtx.com/",
+        },
+        {
           img: kistabandi,
           project_name: "Kistabandi",
           intro: "Company",
           link: "https://www.kistabandi.com/",
         },
-        {
-          img: bishwasportfolio,
-          project_name: "Client Portfolio",
-          intro: "personal",
-          link: "https://bishwastimalsina.com.np/",
-        },
+
         {
           img: chibihr,
           project_name: "Chibi HR",
@@ -88,8 +103,8 @@ const PortfolioProjects = () => {
                             alt="loading"
                             className="w-full lg:h-[550px] h-[350px] z-50 object-cover transition-all duration-500 ease-in-out hover:scale-110"
                           />
-                          <div className="text-white flex items-center  pl-10  bg-gradient-to-t from-[#09101A]  absolute bottom-0 w-full lg:h-[30vh] h-[35vh]">
-                            <div className="text-[25px] font-bold m-4">
+                          <div className="text-white flex items-center pl-10   bg-gradient-to-t from-[#09101A]  absolute bottom-0 w-full lg:h-[30vh] h-[35vh]">
+                            <div className="text-[25px] lg:mb-[-80px] font-bold">
                               {" "}
                               {data.project_name}
                             </div>
@@ -115,7 +130,7 @@ const PortfolioProjects = () => {
                             className="w-full h-[350px] transition-all duration-500 hover:scale-110"
                           />
                           <div className="text-white flex items-center  pl-10  bg-gradient-to-t from-[#09101A]  absolute bottom-0 w-full lg:h-[30vh] h-[35vh]">
-                            <div className="text-[25px] font-bold m-4">
+                            <div className="text-[25px] lg:mb-[-80px] font-bold m-4">
                               {" "}
                               {data.project_name}
                             </div>

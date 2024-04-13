@@ -14,7 +14,6 @@ const Metatag = ({ title, sub_title }: IMetatagProps) => {
         property="og:image"
         content="https://firebasestorage.googleapis.com/v0/b/fir-applications-e96c5.appspot.com/o/my-image.jpg?alt=media&token=3f0ee015-ce28-4b74-b344-a2dfc83dc948"
       />
-
       <meta
         name="keywords"
         content="Anusa khadka Portfolio Full Stack Developer SoftwareEngineer"
