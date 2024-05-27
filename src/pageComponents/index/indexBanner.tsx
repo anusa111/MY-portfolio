@@ -48,7 +48,7 @@ const IndexBanner = () => {
               }}
               title="Download CV"
               icon={<LiaDownloadSolid />}
-              link="/documents/resume-anusa-khadka.pdf"
+              link="/documents/anusa.pdf"
             />
           </div>
         </div>
