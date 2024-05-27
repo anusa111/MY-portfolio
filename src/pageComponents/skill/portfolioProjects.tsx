@@ -4,7 +4,6 @@ import { projectList } from "@/constants/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { BsEyeglasses } from "react-icons/bs";
 import GlobalButton from "../global/GlobalButton";
 
 const PortfolioProjects = () => {
@@ -122,8 +121,7 @@ const PortfolioProjects = () => {
                   fontSize: "16px",
                 }}
                 title="View More Projects"
-                icon={<BsEyeglasses />}
-                link="/all-projects"
+                link="/projects"
               />
             </div>
           </div>
