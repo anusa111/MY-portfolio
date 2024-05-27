@@ -3,9 +3,9 @@ import GlobalComponentHeader from "../global/GlobalComponentHeader";
 import { projectList } from "@/constants/constants";
 import Image from "next/image";
 import Link from "next/link";
-import { LiaDownloadSolid } from "react-icons/lia";
-import GlobalButton from "../global/GlobalButton";
 import { useRouter } from "next/router";
+import { BsEyeglasses } from "react-icons/bs";
+import GlobalButton from "../global/GlobalButton";
 
 const PortfolioProjects = () => {
   const router = useRouter();
@@ -122,7 +122,7 @@ const PortfolioProjects = () => {
                   fontSize: "16px",
                 }}
                 title="View More Projects"
-                icon={<LiaDownloadSolid />}
+                icon={<BsEyeglasses />}
                 link="/all-projects"
               />
             </div>
