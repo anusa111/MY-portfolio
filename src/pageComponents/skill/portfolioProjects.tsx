@@ -1,77 +1,15 @@
 import GlobalComponentHeader from "../global/GlobalComponentHeader";
 
-//images....
-import chibihr from "../../../public/portfolio/Chibihr.png";
-import kistabandi from "../../../public/portfolio/Kistabandi.png";
-import chatchamber from "../../../public/portfolio/chatchamber.png";
-import dynotechglobal from "../../../public/portfolio/dynotechglobal.png";
-import panifilter from "../../../public/portfolio/panifilterImage.png";
-import bishwasportfolio from "../../../public/portfolio/bishwasportfolio.png";
-import nepalmedical from "../../../public/portfolio/nepalmedicalcollege.png";
-import secondclient from "../../../public/portfolio/secondclient.png";
-
+import { projectList } from "@/constants/constants";
 import Image from "next/image";
 import Link from "next/link";
+import { LiaDownloadSolid } from "react-icons/lia";
+import GlobalButton from "../global/GlobalButton";
+import { useRouter } from "next/router";
 
 const PortfolioProjects = () => {
-  const projectList = [
-    {
-      mainProject: [
-        {
-          img: dynotechglobal,
-          project_name: "DynoTech Global",
-          intro: "Company",
-          link: "https://dynotechglobal.com/",
-        },
-        {
-          img: panifilter,
-          project_name: "Panifilter",
-          intro: "Company",
-          link: "https://www.panifilter.com/",
-        },
-      ],
-      secondaryProject: [
-        {
-          img: bishwasportfolio,
-          project_name: "Bishwas Timalsina - Client",
-          intro: "personal",
-          link: "https://bishwastimalsina.com.np/",
-        },
-        {
-          img: nepalmedical,
-          project_name: "Nepal Medical College",
-          intro: "Company",
-          link: "https://nmcth.edu/",
-        },
-        {
-          img: secondclient,
-          project_name: "Quick Repair Tx - USA Client",
-          intro: "personal",
-          link: "https://quickrepairtx.com/",
-        },
-        {
-          img: kistabandi,
-          project_name: "Kistabandi",
-          intro: "Company",
-          link: "https://www.kistabandi.com/",
-        },
-
-        {
-          img: chibihr,
-          project_name: "Chibi HR",
-          intro: "Company",
-          link: "https://www.chibihr.com/",
-        },
-        {
-          img: chatchamber,
-          project_name: "Chat Chamber",
-          intro: "personal",
-          link: "https://chatchamber.netlify.app/",
-        },
-      ],
-    },
-  ];
-
+  const router = useRouter();
+  const { pathname } = router;
   return (
     <div className="layout layout-padding component-padding">
       <div className="flex flex-col gap-20">
@@ -83,7 +21,7 @@ const PortfolioProjects = () => {
           </div>
         />
         <div className="grid grid-cols-1">
-          {projectList.map((data, index) => {
+          {projectList?.map((data, index) => {
             return (
               <div key={index} className="flex flex-col gap-10">
                 <div className={` grid lg:grid-cols-12 grid-cols-1 gap-10 `}>
@@ -114,36 +52,82 @@ const PortfolioProjects = () => {
                     );
                   })}
                 </div>
-                <div className="grid lg:grid-cols-12 grid-cols-1 gap-10 ">
-                  {data.secondaryProject.map((data, index) => {
-                    return (
-                      <Link
-                        href={data.link}
-                        key={index}
-                        className="col-span-4 relative  overflow-hidden"
-                        target="_blank"
-                      >
-                        <div className="transition-all duration-700 ease-in-out hover:scale-110 overflow-hidden">
-                          <Image
-                            src={data.img}
-                            alt="loading"
-                            className="w-full h-[350px] transition-all duration-500 hover:scale-110"
-                          />
-                          <div className="text-white flex items-center  pl-10  bg-gradient-to-t from-[#09101A]  absolute bottom-0 w-full lg:h-[30vh] h-[35vh]">
-                            <div className="text-[25px] lg:mb-[-80px] font-bold m-4">
-                              {" "}
-                              {data.project_name}
+                {pathname == "/projects" ? (
+                  <div className="grid lg:grid-cols-12 grid-cols-1 gap-10 ">
+                    {data.secondaryProject?.map((data, index) => {
+                      return (
+                        <Link
+                          href={data.link}
+                          key={index}
+                          className="col-span-4 relative  overflow-hidden"
+                          target="_blank"
+                        >
+                          <div className="transition-all duration-700 ease-in-out hover:scale-110 overflow-hidden">
+                            <Image
+                              src={data.img}
+                              alt="loading"
+                              className="w-full h-[350px] transition-all duration-500 hover:scale-110"
+                            />
+                            <div className="text-white flex items-center  pl-10  bg-gradient-to-t from-[#09101A]  absolute bottom-0 w-full lg:h-[30vh] h-[35vh]">
+                              <div className="text-[25px] lg:mb-[-80px] font-bold m-4">
+                                {" "}
+                                {data.project_name}
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </Link>
-                    );
-                  })}
-                </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                ) : (
+                  <div className="grid lg:grid-cols-12 grid-cols-1 gap-10 ">
+                    {data.secondaryProject?.slice(0, 3)?.map((data, index) => {
+                      return (
+                        <Link
+                          href={data.link}
+                          key={index}
+                          className="col-span-4 relative  overflow-hidden"
+                          target="_blank"
+                        >
+                          <div className="transition-all duration-700 ease-in-out hover:scale-110 overflow-hidden">
+                            <Image
+                              src={data.img}
+                              alt="loading"
+                              className="w-full h-[350px] transition-all duration-500 hover:scale-110"
+                            />
+                            <div className="text-white flex items-center  pl-10  bg-gradient-to-t from-[#09101A]  absolute bottom-0 w-full lg:h-[30vh] h-[35vh]">
+                              <div className="text-[25px] lg:mb-[-80px] font-bold m-4">
+                                {" "}
+                                {data.project_name}
+                              </div>
+                            </div>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                )}
               </div>
             );
           })}
         </div>
+        {pathname !== "/projects" && (
+          <div className="flex items-center justify-center">
+            <div>
+              <GlobalButton
+                buttonStyle={{
+                  backgroundColor: "var(--primary-color)",
+                  borderRadius: "4px",
+                  color: "var(--black-color)",
+                  fontSize: "16px",
+                }}
+                title="View More Projects"
+                icon={<LiaDownloadSolid />}
+                link="/all-projects"
+              />
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

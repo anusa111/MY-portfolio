@@ -1,19 +1,16 @@
 import Layout from "@/pageComponents/global/Layout";
 import Metatag from "@/pageComponents/global/Metatag";
 import PortfolioProjects from "@/pageComponents/skill/portfolioProjects";
-import SkillEducation from "@/pageComponents/skill/skillEducation";
-import React from "react";
 
-const Projects = () => {
+const AllProjectsPage = () => {
   return (
     <Layout>
-      <Metatag title="Anusa" sub_title="Projects" />
+      <Metatag title="Anusa" sub_title="All Projects" />
       <div className="pt-[120px]">
-        <SkillEducation />
         <PortfolioProjects />
       </div>
     </Layout>
   );
 };
 
-export default Projects;
+export default AllProjectsPage;

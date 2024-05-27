@@ -65,7 +65,6 @@ const ContactForm = () => {
         )
         .then(
           (result) => {
-            console.log(result.text);
             window.location.href = "/thankyou";
 
             viewer.current.value == " ";
