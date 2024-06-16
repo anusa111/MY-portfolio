@@ -24,15 +24,17 @@ const PowerfulMessage = () => {
               }}
             >
               <div>
-                {` As a passionate developer, I know how daunting it can be to meet conventional standards of success. But there's an alternative path.
-                Through comprehensive development, I've unlocked the potential of leveraging advanced technologies and creating distinct solutions. Allow me to lead you on this innovative journey.If you're facing difficulties with intricate web and app development tasks, it's time to harness effective, bespoke development. Together, we'll devise solutions that reflect your aspirations, elevate your digital footprint, and make a meaningful impact.
+                {` 
+As a passionate developer, I understand how challenging it can be to meet traditional success standards. But there's another way. By using advanced technologies, I've learned to create unique solutions. Let me guide you on this innovative journey.
+
+If you're struggling with complex web and app development tasks, it's time to explore custom development. Together, we'll create solutions that align with your goals, enhance your digital presence, and make a real impact.
 
                
                     `}
               </div>
               <div>
                 {`
-                     Let's create a digital platform that delivers satisfaction, purpose, and enables clients to reach their objectives effortlessly. Contact me today, and let's start this thrilling journey together.
+                     Let's build a digital platform that brings satisfaction, purpose, and helps clients achieve their objectives effortlessly. Contact me today, and let's begin this exciting journey together.
                     `}
               </div>
             </div>
