@@ -70,8 +70,8 @@ const BlogContentPage = ({
         <title>{`Anusa khadka-${frontmatter.title}`}</title>
         <meta property="og:image" content={frontmatter.banner} />
       </Head>
-      <div className="lg:pt-[95px] 3xl:pt-[100px] pt-[50px] white-color ">
-        <div className="layout  component-padding">
+      <div className="  py-[120px]  ">
+        <div className="layout  layout-padding">
           <div className="flex flex-col gap-10">
             <div className="max-w-4xl mx-auto">
               <div className="flex flex-col justify-between gap-4">
@@ -99,7 +99,10 @@ const BlogContentPage = ({
                   />
                 </header>
                 <div
-                  className="blog max-w-4xl mx-auto text-white  "
+                  className="blog max-w-4xl mx-auto "
+                  style={{
+                    color: "var(--white-shade)",
+                  }}
                   dangerouslySetInnerHTML={{ __html: md().render(content) }}
                 />
               </div>
@@ -123,7 +126,7 @@ const BlogContentPage = ({
             </div>
           </div>
         </div>
-        <div className="layout component-padding  flex flex-col lg:gap-20 gap-10 white-color">
+        <div className="layout layout-padding  flex flex-col lg:gap-20 gap-10 white-color">
           <div className="text-[24px] font-bold color-changer">
             Related Blogs
           </div>

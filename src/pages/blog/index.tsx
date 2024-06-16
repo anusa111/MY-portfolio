@@ -20,7 +20,7 @@ const BlogMainPage = ({ totalPosts, totalPages, activePage = 1 }: any) => {
   return (
     <Layout>
       <Metatag title="Anusa" sub_title="Blog" />
-      <div className="layout py-[120px]   flex flex-col gap-20 white-color">
+      <div className="layout layout-padding py-[120px]   flex flex-col gap-20 white-color">
         <div className="flex flex-col lg:gap-20 gap-10">
           <div className="text-[24px] font-bold color-changer">
             Recent Blogs
@@ -81,22 +81,24 @@ const BlogMainPage = ({ totalPosts, totalPages, activePage = 1 }: any) => {
             ))}
           </div>
         </div>
-        <ReactPaginate
-          className="flex gap-2 items-center   justify-end mt-12"
-          breakLabel="..."
-          nextLabel="Next 🠖"
-          onPageChange={({ selected }) => {
-            if (activePage !== selected + 1) {
-              router.push(`/blog/page/${selected + 1}`);
-            }
-          }}
-          pageRangeDisplayed={5}
-          initialPage={activePage - 1}
-          pageCount={totalPages}
-          previousLabel="🠔 Previous"
-          renderOnZeroPageCount={null}
-          activeClassName="bg-[#55E6A5] text-[#1e1e1e] px-4 py-1 text-white rounded-lg"
-        />
+        {totalPages > 0 && (
+          <ReactPaginate
+            className="flex gap-2 items-center   justify-end mt-12"
+            breakLabel="..."
+            nextLabel="Next 🠖"
+            onPageChange={({ selected }) => {
+              if (activePage !== selected + 1) {
+                router.push(`/blog/page/${selected + 1}`);
+              }
+            }}
+            pageRangeDisplayed={5}
+            initialPage={activePage - 1}
+            pageCount={totalPages}
+            previousLabel="🠔 Previous"
+            renderOnZeroPageCount={null}
+            activeClassName="bg-[#55E6A5] px-4 py-1 text-[#1e1e1e] rounded-lg"
+          />
+        )}
       </div>
     </Layout>
   );
