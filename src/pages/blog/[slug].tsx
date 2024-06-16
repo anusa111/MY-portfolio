@@ -71,54 +71,57 @@ const BlogContentPage = ({
         <title>{`${frontmatter.title}-ChibiHR`}</title>
         <meta property="og:image" content={frontmatter.banner} />
       </Head>
-      <div className="relative">
-        <div className="layout layout-padding py-[180px]">
-          <div className="flex flex-col gap-10">
-            <div className="max-w-5xl mx-auto">
-              <div className="flex flex-col justify-between gap-4">
-                <header className="text-left">
-                  <h1 className="font-semibold  dark:text-[#bcb8b8]  lg:text-4xl text-2xl max-w-5xl text-primary">
-                    {frontmatter.title}
-                  </h1>
-                  <div className="flex items-center text-[#666666] italic justify-left gap-2 text-sm my-6">
-                    <time>
-                      {Intl.DateTimeFormat("en-US", {
-                        month: "short",
-                        day: "numeric",
-                        year: "numeric",
-                      }).format(new Date(frontmatter.date))}
-                    </time>
-                    <div className="h-2 w-2 rounded-full bg-gray-700"></div>
-                    <div>{frontmatter.duration} read</div>
-                  </div>
-                  <img
-                    src={frontmatter.banner}
-                    alt="image"
-                    width={540}
-                    height={540}
-                    className="w-full lg:h-[500px] lg:p-0 p-4 object-cover  mb-6"
-                  />
-                </header>
-                <div
-                  className="blog max-w-5xl mx-auto text-[#666666]  dark:text-[#bcb8b8]"
-                  dangerouslySetInnerHTML={{ __html: md().render(content) }}
-                />
-              </div>
-            </div>
-            <div className="max-w-5xl mx-auto w-full">
-              <div className="flex gap-4 items-center ">
-                <div className="flex items-center gap-4">
-                  <img
-                    src={frontmatter.userprofile}
-                    alt="blog-image"
-                    className="h-[8vh] w-[8vh] rounded-full object-cover"
-                  />
-                  <div className="flex flex-col text-[#666666]">
-                    <div className="font-medium text-[18px]">
-                      {frontmatter.author}
+      <div className="py-[120px]">
+        <div className="layout layout-padding component-padding">
+          <div className="">
+            <div className="flex flex-col gap-10">
+              <div className="max-w-4xl mx-auto">
+                <div className="flex flex-col justify-between gap-4">
+                  <header className="text-center ">
+                    <h1 className="font-semibold    lg:text-4xl text-2xl max-w-5xl text-primary">
+                      {frontmatter.title}
+                    </h1>
+                    <div className="flex items-center text-[#666666] justify-center gap-2 text-sm my-6">
+                      <time>
+                        {Intl.DateTimeFormat("en-US", {
+                          month: "short",
+                          day: "numeric",
+                          year: "numeric",
+                        }).format(new Date(frontmatter.date))}
+                      </time>
+                      <div className="h-2 w-2 rounded-full bg-gray-700"></div>
+                      <div>{frontmatter.duration} read</div>
                     </div>
-                    <div className="text-[14px] italic">
-                      {frontmatter.position}
+                    <img
+                      src={frontmatter.banner}
+                      alt="image"
+                      width={540}
+                      height={540}
+                      className="w-full lg:h-[500px] lg:p-0 p-4 object-contain  mb-6"
+                    />
+                  </header>
+                  <div
+                    className="blog max-w-4xl mx-auto "
+                    style={{
+                      color: "var(--white-shade)",
+                    }}
+                    dangerouslySetInnerHTML={{ __html: md().render(content) }}
+                  />
+                </div>
+              </div>
+              <div className="max-w-4xl mx-auto   w-full">
+                <div className="flex gap-4 items-center ">
+                  <div className="flex items-center gap-4">
+                    <img
+                      src={frontmatter.userprofile}
+                      alt="blog-image"
+                      className="h-[8vh] w-[8vh] rounded-full object-cover"
+                    />
+                    <div className="flex flex-col text-white">
+                      <div className="font-medium text-[18px]">
+                        {frontmatter.author}
+                      </div>
+                      <div className="text-[14px]">{frontmatter.position}</div>
                     </div>
                   </div>
                 </div>
@@ -126,7 +129,7 @@ const BlogContentPage = ({
             </div>
           </div>
         </div>
-        <div className="layout layout-padding pb-20 flex flex-col lg:gap-10 gap-10">
+        <div className="layout  pb-20 flex flex-col lg:gap-10 gap-10">
           <div className="text-[26px] font-bold color-changer heading-right">
             Related Blogs
           </div>

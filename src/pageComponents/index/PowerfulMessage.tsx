@@ -4,7 +4,7 @@ import anusa from "../../../public/index/anusakhadka.png";
 import GlobalComponentHeader from "../global/GlobalComponentHeader";
 const PowerfulMessage = () => {
   return (
-    <div className="layout layout-padding">
+    <div className="layout layout-padding component-padding">
       <div className="flex flex-col gap-[120px]">
         <div className="grid lg:grid-cols-8 gap-20">
           <div className="lg:col-span-5 flex flex-col gap-[24px]">
