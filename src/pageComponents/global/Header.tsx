@@ -51,6 +51,10 @@ const Header = () => {
       menu: "Projects",
       link: "/projects",
     },
+    {
+      menu: "Blogs",
+      link: "/blog",
+    },
   ];
 
   return (

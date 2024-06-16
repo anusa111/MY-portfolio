@@ -23,6 +23,10 @@ const Footer = () => {
           menu: "Projects",
           link: "/projects",
         },
+        {
+          menu: "Blogs",
+          link: "/blog",
+        },
       ],
     },
     {

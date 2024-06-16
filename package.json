@@ -9,20 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "antd": "^5.10.3",
+    "gray-matter": "^4.0.3",
     "next": "14.0.1",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.11.0",
-    "react-paginate": "^8.2.0",
-    "gray-matter": "^4.0.3",
     "react-multi-carousel": "^2.8.4",
-    "@emailjs/browser": "^3.11.0"
-
-
-
+    "react-paginate": "^8.2.0",
+    "react-share": "^5.1.0",
+    "markdown-it": "^14.0.0"
   },
   "devDependencies": {
+    "@types/markdown-it": "^13.0.7",
+
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -31,9 +32,6 @@
     "eslint-config-next": "14.0.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5",
-
-    "@types/markdown-it": "^12.2.3"
-
+    "typescript": "^5"
   }
 }
