@@ -8,14 +8,15 @@ import dynotechglobal from "../../public/portfolio/dynotechglobal.png";
 import nepalmedical from "../../public/portfolio/nepalmedicalcollege.png";
 import secondclient from "../../public/portfolio/secondclient.png";
 import panifilter from "../../public/portfolio/panifilterImage.png";
+import dynocrm from "../../public/portfolio/dynocrm.png";
 export const projectList = [
   {
     mainProject: [
       {
-        img: dynotechglobal,
-        project_name: "DynoTech Global",
+        img: dynocrm,
+        project_name: "Dyno CRM",
         intro: "Company",
-        link: "https://dynotechglobal.com/",
+        link: "https://www.dynohive.com/dynocrm",
       },
       {
         img: dynoacademy,
@@ -25,6 +26,12 @@ export const projectList = [
       },
     ],
     secondaryProject: [
+      {
+        img: dynotechglobal,
+        project_name: "Dynotech Global",
+        intro: "Company",
+        link: "https://www.dynotechglobal.com/",
+      },
       {
         img: chibihr,
         project_name: "Chibi HR",

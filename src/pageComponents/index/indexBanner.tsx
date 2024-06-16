@@ -23,7 +23,7 @@ const IndexBanner = () => {
                 color: "var(--primary-color)",
               }}
             >
-              FULL STACK DEVELOPER
+              MERN STACK DEVELOPER
             </div>
           </div>
           <div
@@ -32,7 +32,7 @@ const IndexBanner = () => {
             }}
             className="leading-7 w-[85%]"
           >
-            I{"'m"} a versatile full-stack developer skilled in both front-end
+            I{"'m"} a versatile MERN Stack developer skilled in both front-end
             and back-end development. With a strong foundation in design
             principles and a keen eye for detail, I specialize in translating
             complex ideas into user-friendly interfaces that captivate and
