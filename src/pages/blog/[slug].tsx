@@ -7,6 +7,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+import { IoArrowBackSharp } from "react-icons/io5";
 import {
   FacebookIcon,
   FacebookShareButton,
@@ -67,19 +68,19 @@ const BlogContentPage = ({
   return (
     <Layout>
       <Head>
-        <title>{`Anusa khadka-${frontmatter.title}`}</title>
+        <title>{`${frontmatter.title}-ChibiHR`}</title>
         <meta property="og:image" content={frontmatter.banner} />
       </Head>
-      <div className="  py-[120px]  ">
-        <div className="layout  layout-padding">
+      <div className="relative">
+        <div className="layout layout-padding py-[180px]">
           <div className="flex flex-col gap-10">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-5xl mx-auto">
               <div className="flex flex-col justify-between gap-4">
-                <header className="text-center ">
-                  <h1 className="font-semibold    lg:text-4xl text-2xl max-w-5xl text-primary">
+                <header className="text-left">
+                  <h1 className="font-semibold  dark:text-[#bcb8b8]  lg:text-4xl text-2xl max-w-5xl text-primary">
                     {frontmatter.title}
                   </h1>
-                  <div className="flex items-center text-[#666666] justify-center gap-2 text-sm my-6">
+                  <div className="flex items-center text-[#666666] italic justify-left gap-2 text-sm my-6">
                     <time>
                       {Intl.DateTimeFormat("en-US", {
                         month: "short",
@@ -95,19 +96,16 @@ const BlogContentPage = ({
                     alt="image"
                     width={540}
                     height={540}
-                    className="w-full lg:h-[500px] lg:p-0 p-4 object-contain  mb-6"
+                    className="w-full lg:h-[500px] lg:p-0 p-4 object-cover  mb-6"
                   />
                 </header>
                 <div
-                  className="blog max-w-4xl mx-auto "
-                  style={{
-                    color: "var(--white-shade)",
-                  }}
+                  className="blog max-w-5xl mx-auto text-[#666666]  dark:text-[#bcb8b8]"
                   dangerouslySetInnerHTML={{ __html: md().render(content) }}
                 />
               </div>
             </div>
-            <div className="max-w-4xl mx-auto   w-full">
+            <div className="max-w-5xl mx-auto w-full">
               <div className="flex gap-4 items-center ">
                 <div className="flex items-center gap-4">
                   <img
@@ -115,19 +113,21 @@ const BlogContentPage = ({
                     alt="blog-image"
                     className="h-[8vh] w-[8vh] rounded-full object-cover"
                   />
-                  <div className="flex flex-col text-white">
+                  <div className="flex flex-col text-[#666666]">
                     <div className="font-medium text-[18px]">
                       {frontmatter.author}
                     </div>
-                    <div className="text-[14px]">{frontmatter.position}</div>
+                    <div className="text-[14px] italic">
+                      {frontmatter.position}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="layout layout-padding  flex flex-col lg:gap-20 gap-10 white-color">
-          <div className="text-[24px] font-bold color-changer">
+        <div className="layout layout-padding pb-20 flex flex-col lg:gap-10 gap-10">
+          <div className="text-[26px] font-bold color-changer heading-right">
             Related Blogs
           </div>
           <div className="grid lg:grid-cols-3  lg:gap-[80px] gap-10">
@@ -136,23 +136,16 @@ const BlogContentPage = ({
               .map(({ slug, frontmatter }: any) => (
                 <div key={slug} className="">
                   <div className="flex flex-col lg:gap-10 gap-6">
-                    <div className="flex flex-col gap-4">
-                      <Link
-                        href={`/blog/${slug}`}
-                        className="group overflow-hidden rounded-[8px]"
-                      >
-                        <img
-                          src={frontmatter.banner}
-                          alt="blog-image"
-                          className=" h-[200px] w-[400px] object-cover  3xl:object-cover transform transition duration-[700ms] ease-in-out group-hover:scale-110"
-                        />
-                      </Link>
-                      <div>
-                        <div className="bg-[#55E6A5] text-[#1e1e1e] flex items-center justify-center w-fit rounded-full px-4 py-1">
-                          {frontmatter.category}
-                        </div>
-                      </div>
-                    </div>
+                    <Link
+                      href={`/blog/${slug}`}
+                      className="group overflow-hidden rounded-[8px]"
+                    >
+                      <img
+                        src={frontmatter.banner}
+                        alt="blog-image"
+                        className=" h-[200px] w-[400px] object-cover  3xl:object-cover transform transition duration-[700ms] ease-in-out group-hover:scale-110"
+                      />
+                    </Link>
                     <div className="flex flex-col lg:gap-8 gap-2">
                       <Link
                         href={`/blog/${slug}`}
@@ -160,20 +153,24 @@ const BlogContentPage = ({
                       >
                         {frontmatter.title}
                       </Link>
-                      <div className="flex flex-col  gap-4">
-                        <div className="flex gap-2 items-center">
-                          <div className="flex gap-2 items-center justify-center w-fit  bg-[#1c2026] rounded-full px-4 py-1">
-                            <time>
-                              {Intl.DateTimeFormat("en-US", {
-                                month: "short",
-                                day: "numeric",
-                                year: "numeric",
-                              }).format(new Date(frontmatter.date))}
-                            </time>
-                          </div>
-                          <div className="flex gap-2  items-center justify-center w-fit  bg-[#1c2026] rounded-full px-4 py-1">
-                            {frontmatter.author}
-                          </div>
+                      <div className="flex items-center gap-4">
+                        <img
+                          src={frontmatter.userprofile}
+                          alt="blog-image"
+                          className="h-[6vh] w-[6vh] rounded-full object-cover"
+                        />
+
+                        <div className="font-medium text-[18px] color-changer">
+                          {frontmatter.author}
+                        </div>
+                        <div className="flex gap-2 items-center text-[#7e7d7d]">
+                          <time>
+                            {Intl.DateTimeFormat("en-US", {
+                              month: "short",
+                              day: "numeric",
+                              year: "numeric",
+                            }).format(new Date(frontmatter.date))}
+                          </time>
                         </div>
                       </div>
                     </div>

@@ -29,7 +29,7 @@ export async function getStaticProps({ params: { page } }: { params: any }) {
   };
 }
 
-const BlogByPage = (props: any) => {
+const NewsByPage = (props: any) => {
   return (
     <>
       <BlogMainPage {...props} />;
@@ -37,4 +37,4 @@ const BlogByPage = (props: any) => {
   );
 };
 
-export default BlogByPage;
+export default NewsByPage;
