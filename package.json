@@ -12,18 +12,17 @@
     "@emailjs/browser": "^3.11.0",
     "antd": "^5.10.3",
     "gray-matter": "^4.0.3",
+    "markdown-it": "^14.0.0",
     "next": "14.0.1",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.11.0",
     "react-multi-carousel": "^2.8.4",
     "react-paginate": "^8.2.0",
-    "react-share": "^5.1.0",
-    "markdown-it": "^14.0.0"
+    "react-share": "^5.1.0"
   },
   "devDependencies": {
     "@types/markdown-it": "^13.0.7",
-
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
