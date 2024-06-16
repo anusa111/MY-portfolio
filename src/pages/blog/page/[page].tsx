@@ -30,11 +30,7 @@ export async function getStaticProps({ params: { page } }: { params: any }) {
 }
 
 const NewsByPage = (props: any) => {
-  return (
-    <>
-      <BlogMainPage {...props} />;
-    </>
-  );
+  return <>{props && <BlogMainPage {...props} />}</>;
 };
 
 export default NewsByPage;

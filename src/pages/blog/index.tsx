@@ -89,7 +89,7 @@ const BlogMainPage = ({ totalPosts, totalPages, activePage = 1 }: any) => {
           pageCount={totalPages}
           previousLabel="🠔 Previous"
           renderOnZeroPageCount={null}
-          activeClassName="bg-[#6990c7] px-4 py-1 text-white rounded-lg"
+          activeClassName="bg-[#55E6A5] px-4 py-1 text-[#1e1e1e] rounded-lg"
         />
       </div>
     </Layout>
