@@ -49,7 +49,7 @@ const ServiceList = () => {
             return (
               <div
                 key={index}
-                className="relative border-[2px] border-[#191919] p-8 flex flex-col gap-[20px] items-center justify-center"
+                className="relative  border-[2px] border-[#191919] p-8 flex flex-col gap-[20px] items-center justify-center"
               >
                 <div className="absolute top-[-35px] ">
                   <Image

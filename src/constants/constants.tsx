@@ -55,7 +55,7 @@ export const projectList = [
         img: secondclient,
         project_name: "Quick Repair Tx - USA Client",
         intro: "personal",
-        link: "https://quickrepairtx.com/",
+        link: "https://quickrepairtx.netlify.app/",
       },
       {
         img: panifilter,
