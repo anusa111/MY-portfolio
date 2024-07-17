@@ -2,13 +2,15 @@
 import chibihr from "../../public/portfolio/Chibihr.png";
 import kistabandi from "../../public/portfolio/Kistabandi.png";
 import bishwasportfolio from "../../public/portfolio/bishwasportfolio.png";
+import cambridge from "../../public/portfolio/cambridge.png";
 import chatchamber from "../../public/portfolio/chatchamber.png";
 import dynoacademy from "../../public/portfolio/dynoacademy.png";
-import dynotechglobal from "../../public/portfolio/dynotechglobal.png";
-import nepalmedical from "../../public/portfolio/nepalmedicalcollege.png";
-import secondclient from "../../public/portfolio/secondclient.png";
-import panifilter from "../../public/portfolio/panifilterImage.png";
 import dynocrm from "../../public/portfolio/dynocrm.png";
+import dynotechglobal from "../../public/portfolio/dynotechglobal.png";
+import milkco from "../../public/portfolio/milkco.png";
+import panifilter from "../../public/portfolio/panifilterImage.png";
+import secondclient from "../../public/portfolio/secondclient.png";
+
 export const projectList = [
   {
     mainProject: [
@@ -31,6 +33,12 @@ export const projectList = [
         project_name: "Dynotech Global",
         intro: "Company",
         link: "https://www.dynotechglobal.com/",
+      },
+      {
+        img: milkco,
+        project_name: "MilkCo Nepal",
+        intro: "Company",
+        link: "https://milkconepal.com/",
       },
       {
         img: chibihr,
@@ -65,16 +73,17 @@ export const projectList = [
       },
 
       {
+        img: cambridge,
+        project_name: "Cambridge",
+        intro: "personal",
+        link: "https://cambridge12.vercel.app/",
+      },
+
+      {
         img: chatchamber,
         project_name: "Chat Chamber",
         intro: "personal",
         link: "https://chatchamber.netlify.app/",
-      },
-      {
-        img: nepalmedical,
-        project_name: "Nepal Medical College",
-        intro: "Company",
-        link: "https://nmcth.edu/",
       },
     ],
   },
