@@ -10,6 +10,7 @@ import dynotechglobal from "../../public/portfolio/dynotechglobal.png";
 import milkco from "../../public/portfolio/milkco.png";
 import panifilter from "../../public/portfolio/panifilterImage.png";
 import secondclient from "../../public/portfolio/secondclient.png";
+import sajiloflight from "../../public/portfolio/sajiloflight.png";
 
 export const projectList = [
   {
@@ -41,11 +42,18 @@ export const projectList = [
         link: "https://milkconepal.com/",
       },
       {
+        img: sajiloflight,
+        project_name: "Sajilo Flight",
+        intro: "Company",
+        link: "https://nat-travel-frontend.vercel.app/",
+      },
+      {
         img: chibihr,
         project_name: "Chibi HR",
         intro: "Company",
         link: "https://www.chibihr.com/",
       },
+
       {
         img: bishwasportfolio,
         project_name: "Bishwas Timalsina - Client",
