@@ -19,7 +19,7 @@ const Thankyou = () => {
             </div>
             <div className="  text-center lg:text-[24px] text-[20px]">
               <div className=" ">Your message has been received</div>
-              <div className=" ">I will get back to you seen.</div>
+              <div className=" ">I will get back to you soon.</div>
             </div>
 
             <Link href="/">
