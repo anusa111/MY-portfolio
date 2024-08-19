@@ -11,6 +11,7 @@ import milkco from "../../public/portfolio/milkco.png";
 import panifilter from "../../public/portfolio/panifilterImage.png";
 import secondclient from "../../public/portfolio/secondclient.png";
 import sajiloflight from "../../public/portfolio/sajiloflight.png";
+import sm_adventure from "../../public/portfolio/sm_adventure.png";
 
 export const projectList = [
   {
@@ -34,6 +35,12 @@ export const projectList = [
         project_name: "Dynotech Global",
         intro: "Company",
         link: "https://www.dynotechglobal.com/",
+      },
+      {
+        img: sm_adventure,
+        project_name: "SM Adventure",
+        intro: "Company",
+        link: "https://smadventuretour.com/",
       },
       {
         img: milkco,

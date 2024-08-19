@@ -3,19 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --primary-color:#55E6A5;
+  --primary-color: #55e6a5;
 
-  --white-shade:#A2A2A2;
-  --black-color:#02050A;
-
-
+  --white-shade: #a2a2a2;
+  --black-color: #02050a;
 }
-*{
-  font-family: 'Public Sans', sans-serif;
+* {
+  font-family: "Public Sans", sans-serif;
 }
-body{
-  color:whitesmoke;
-  background-color: #09101A;
+body {
+  color: whitesmoke;
+  background-color: #09101a;
 }
 
 .layout {
@@ -29,11 +27,19 @@ body{
   @apply lg:py-[60px] 3xl:py-[120px] py-[60px];
 }
 .hexagon {
-  -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  -webkit-clip-path: polygon(
+    25% 5%,
+    75% 5%,
+    100% 50%,
+    75% 95%,
+    25% 95%,
+    0% 50%
+  );
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
- }
- @keyframes moveUpDown {
-  0%, 100% {
+}
+@keyframes moveUpDown {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -42,11 +48,8 @@ body{
 }
 
 .animated-element {
-
-  background-color: blue;
   animation: moveUpDown 4s linear infinite;
 }
-
 
 .marquee {
   height: 100px;
